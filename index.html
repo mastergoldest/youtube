@@ -1,18 +1,80 @@
 <!doctype html>
-<html>
+<html  data-them="dark">
 <head>
   <title>youtube interface clone</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="index.js" defer></script>
   <link href="output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- header-section -->
    <section>
-    <header class="relative dark:text-white">
-      <div class="flex flex-row w-full justify-between pl-5 pr-5 md:pl-15 md:pr-10 py-3 items-center">
-        <div class="font-stretch-50% text-xl font-bold"><i class="fa-brands fa-youtube text-red-600"></i>YouTube <span class="relative text-black/50 text-xs -top-2 -left-0.5 font-semibold">NG</span></div>
+    <header>
+      
+      <div class="flex flex-row w-full justify-between pl-5 pr-5 md:pl-15 md:pr-10 py-3 items-center ">
+        <div class="font-stretch-50% text-xl font-bold flex ">
+          <label class="hidden md:flex">
+          <input type="checkbox">
+          <div class="toggle">
+            <span class="Top-line common"></span>
+            <span class="Middle-line common"></span>
+            <span class="Bottom-line common"></span>
+          </div>
+          <div id="navMenu" class=" Slide fixed z-10 top-0 bg-white pt-20 px-3">
+            <div class="flex flex-row">
+             <input type="checkbox">
+          <div class="toggle">
+            <span class="Top-line common"></span>
+            <span class="Middle-line common"></span>
+            <span class="Bottom-line common"></span>
+          </div>
+           <div class="shrink-0  "><i class="fa-brands fa-youtube text-red-600"></i>YouTube <span class="relative text-black/50 text-xs -top-2 -left-0.5 font-semibold">NG</span></div>
+          </div>
+    <a href="#" class="flex hover:bg-black/20 py-1 px-2 rounded-xl"><i class="fa-solid fa-house text-2xl pr-10"></i>
+  <p class="text-xl  text-black">Home</p></a>
+  <a href="#" class="flex mt-2 mb-5  hover:bg-black/20 py-1 px-3 rounded-xl"><i class="fa-solid fa-bolt text-2xl  pr-10"></i> <p class=" text-black text-xl">Shorts</p></a> <hr>
+  <div class="my-5">
+    <div><a href="#" class="block hover:bg-black/20 py-2 font-bold  px-3.5 rounded-xl text-[13px] ">Subscriptions <i class="fa-solid fa-chevron-right "></i></div></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-red-500 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">mastergoldest</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-red-500 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">mastergoldest</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-red-500 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">favoroshoaro</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-cyan-500 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">mastergoldest</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-red-200 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">mastergoldest</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">masteremma</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "> <div class="h-7 w-7 rounded-full bg-yellow-200 flex items-center justify-center shrink-0 mr-2"><div>m</div></div> <p class=" ooval text-[1rem] font-serif">oshoaro</p></a>
+    <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl text-center "><i class="fa-solid fa-chevron-down  mr-5 text-xs"></i><p class="text-[1rem] font-serif ">show more</p></a>
+  </div>
+  <hr>
+  <div class="my-5">
+    <div><a href="#" class="block hover:bg-black/20 py-2 font-bold  px-3.5 rounded-xl text-[13px] mb-6">You <i class="fa-solid fa-chevron-right "></i></div></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-history mr-3"></i> <p class="text-[1rem] font-serif">history</p></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-list-ul mr-3"></i> <p class="text-[1rem] font-serif">Playlist</p></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-clock mr-3"></i> <p class="text-[1rem] font-serif">watch later</p></a>
+      <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-thumbs-up mr-3"></i> <p class="text-[1rem] font-serif">Liked videos</p></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-video mr-3"></i> <p class="text-[1rem] font-serif">Your videos</p></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-download mr-3"></i> <p class="text-[1rem] font-serif">Downloads</p></a>
+    
+  </div>
+  <div class="my-5">
+    <div><a href="#" class="block hover:bg-black/20 py-2 font-bold  px-3.5 rounded-xl text-[13px] mb-6">Explore</a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-music mr-3"></i> <p class="text-[1rem] font-serif">Music</p></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-gamepad mr-3"></i> <p class="text-[1rem] font-serif">Gaming</p></a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-newspaper mr-3"></i> <p class="text-[1rem] font-serif">News</p></a>
+      <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-chevron-down mr-3"></i> <p class="text-[1rem] font-serif">show more</p></a> <hr>
+      <div class="my-5">
+    <div><a href="#" class="block hover:bg-black/20 py-2 font-bold  px-3.5 rounded-xl text-[13px] mb-6">Explore</a>
+     <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-brands fa-youtube mr-3"></i> <p class="text-[.6rem] font-serif">Youtube premium</p></a> <hr> 
+    </div>
+    <div class="my-5"> <a href="#" class="flex hover:bg-black/20 py-2  px-3.5 rounded-xl "><i class="flex fa-solid fa-flag mr-3"></i> <p class="text-[.6rem] font-serif">Report history</p></a></div> <hr>
+    <div class="my-6">
+    <p class="text-black/40 text-[12px]"> About Press Copyright Contact us Creators Advertise Developers</p>
+    <p class="mt-4 text-black/40 text-[10px]"><i class="fa-solid fa-copyright"></i> 2026 Google Plc</p>
+  </div>
+    </div> </div> </div> </div>
+        </label>
+         <div class="shrink-0  "><i class="fa-brands fa-youtube text-red-600"></i>YouTube <span class="relative text-black/50 text-xs -top-2 -left-0.5 font-semibold">NG</span></div></div>
         <div class="hidden md:flex items-center gap-4">
         <div class="flex items-center ">
           <input type="text" placeholder="search" class=" border border-black/30 py-2 px-3 rounded-l-full outline-none focus:border-blue-500/50 w-xs"><div class="py-2 px-4 border border-black/30 rounded-r-full bg-black/10"><i class="fa-solid fa-magnifying-glass"></i></div></div> <div class="rounded-full bg-black/10 h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-microphone text-2xl "></i></div></div>
@@ -22,32 +84,26 @@
         <div><i class="fa-solid fa-bell text-2xl"></i></div> <div class="h-10 w-10 rounded-full bg-green-500 hidden md:flex items-center justify-center"><p>M</p></div> <div class=""><i class="fa-solid fa-magnifying-glass"></i></div></div>
       </div>
     </header>
-    <label class="hidden md:flex">
-          <button id="hamburger-menu" class="relative text-3xl w-8 h-8 cursor-pointer -top-12 left-3.5 z-10">
-            <div class="absolute  bg-black  
-            w-8 h-0.5 top-4 rounded transition-all duration-500 before:content-[''] before:bg-black
-             before:w-8 before:h-0.5 before:rounded before:absolute before:-translate-x-4 before:-translate-y-2 before:transition-all before:duration-500 after:content-[''] after:bg-black after:w-8 after:h-0.5 after:rounded after:absolute after:-translate-x-4 after:translate-y-2 after:transition-all after:duration-500">
-          </div>
-         </button>
-        </div>
-        </label> 
    </section>
+   
+   
+
    <!-- hamburger-section -->
-   <section class="hidden md:flex h-full absolute w-16 text-center justify-center pl-10 dark:text-white">
+   <section>
+    <div  class="hidden md:flex h-full absolute w-16 text-center justify-center pl-10 dark:text-white">
  <div class="flex flex-col gap-10"> 
   <div><i class="fa-solid fa-house text-2xl"></i>
   <p class="text-xs text-black/80">Home</p></div>
   <div><i class="fa-solid fa-bolt text-2xl"></i> <p class="text-xs text-black/80">Shorts</p></div>
   <div><i class="fa-solid fa-rectangle-list text-2xl"></i> <p class="text-xs text-black/80">Subscriptions</p></div>
   <div><i class="fa-solid fa-user text-2xl"></i> <p class="text-xs text-black/80">You</p></div>
-</div>
+</div></div>
    </section>
    <!-- main-section-menulist -->
-   <section class="md:pl-30 md:-top-8 relative pl-10 dark:text-white">
-    <div class="flex-row gap-8 overflow-x-scroll flex scrollbar-hide text-nowrap">
-      <a href="#" class="bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black active:text-white md:hidden"><i class="fa-solid fa-compass "></i></a>
-      <a href="#" class="bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black active:text-white">All</a> 
-      <a href="#" class="bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black active:text-white">Music</a> 
+   <section  class="md:pl-30 -md:top-8 relative dark:text-white">
+    <div id="filter-container" class="flex-row pl-10 gap-8 overflow-x-scroll flex scrollbar-hide text-nowrap">
+      <a href="#" class="filter-item bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black active:text-white">All</a> 
+      <a href="#" class="bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black dark:bg-blue-600 active:text-white">Music</a> 
       <a href="#" class="bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black active:text-white">Movies</a> 
       <a href="#" class="bg-black/10  text-center py-2 font-bold px-2 rounded-xl active:bg-black active:text-white">master</a> 
       <a href="#" class="bg-black/10  text-center py-2 font-bold  px-2 rounded-xl active:bg-black active:text-white">Goldest</a> 
