@@ -1,10 +1,10 @@
 // const hamburger = document.getElementById('hamburger');
-// const navMenu = document.getElementById('navMenu');
+const navMenu = document.getElementById('navMenu');
 // const bar1 = document.getElementById('bar1');
 // const bar2 = document.getElementById('bar2');
 // const bar3 = document.getElementById('bar3');
 
-// let isOpen = false;
+let isOpen = false;
 
 // hamburger.addEventListener ('click' , () => {
 //   isOpen = !isOpen;
@@ -20,11 +20,11 @@
 //   bar3.classlist.toggle('-rotate-45' , isOpen);
 //   bar3.classlist.toggle('-translate-y-2' , isOpen);
 // });
-// //close menu when a link is clicked
-// navMenu.querySelectorAll('a').forEach(link =>{
-//   link.addEventListener('click' , () =>{ isOpen=false;
-//     navMenu.classList.add('hidden');
-//     navMenu.classList.add('flex');
+//close menu when a link is clicked
+navMenu.querySelectorAll('a').forEach(link =>{
+  link.addEventListener('click' , () =>{ isOpen=false;
+    // navMenu.classList.add('hidden');
+    // navMenu.classList.add('flex');
 
 //     bar1.classList.remove('rotate-45', 'translate-y-2');
 
@@ -32,5 +32,5 @@
 
 //     bar3.classList.remove('-rotate-45', '-translate-y-2');
 
-//   });
-// });
+  });
+});
