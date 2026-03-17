@@ -86,3 +86,8 @@ input[type="checkbox"]:checked ~ .Slide{
     overflow: hidden;
     max-width: 100px;
 }
+.card{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
